@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bit Perspectives</title>
+    <link rel="icon" type="image/png" href="img/logo.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body onload="myFunction()">
+    <!-- -------------------------------------- Opening -------------------------------------- -->
+    <div class="op-container">
+        <div class="op-wrapper">
+            <div class="op-text-1 op-text">Digitise your business </div>
+            <div class="op-text-2 op-text">Digitise your business </div>
+            <div class="op-text-3 op-text">Digitise your business </div>
+            <div class="op-text-4 op-text">Digitise your business </div>
+            <div class="op-text-5 op-text">Digitise your business </div>
+            <div class="op-text-6 op-text">Digitise your business </div>
+            <div class="op-text-7 op-text">Digitise your business </div>
+            <div class="op-text-8 op-text">Digitise your business </div>
+            <div class="op-text-9 op-text">Digitise your business </div>
+            <div class="op-text-10 op-text">Digitise your business </div>
+            <div class="op-text-11 op-text">Digitise your business </div>
+            <div class="op-anime">
+                <img src="img/logo/logo-anime.gif"/>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------- Nav-Bar -------------------------------------- -->
+    <div class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-logo"> <a class="nav-img" href="index.html">
+                <img src="img/white-banner.png"> 
+            </a></li>
+            <li class="nav-btn"><a href="contact.html"> 
+                <button>Free Consulation </button>
+            </a></li>
+            <li><a href="about.html"> About Us
+                <div width="72px" class="underbar"></div>
+                <!-- <div width="72px" class="nav-underline"></div> -->
+            </a></li>
+            <li><a href="case.html"> Case Studies 
+                <div width="117px" class="underbar"></div>
+            </a></li>
+            <li><a href="services.html"> Services 
+                <div width="77px" class="underbar"></div>
+            </a></li>
+            <li><a href="index.html"> Home 
+                <div width="56px" class="underbar"></div>
+            </a></li>
+        </ul>
+    </div>
+
+    <div class="nav-bar-m">
+        <nav role="navigation"> 
+            <a class="nav-img-m" href="index.html">
+                <img src="img/white-banner.png"> 
+            </a>
+            <div id="menuToggle">
+                <input type="checkbox" id="mobileMenuCheck" onclick="checkCheckBox()"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li class="nav-logo"> </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="case.html">Case Studies</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Free Consulation</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- -------------------------------------- Main -------------------------------------- -->
+    <div class="main row" id="demo">
+        <div class="main-left col">
+            <h1 class="solgan"> Catapulting Your Business Into The Digital Age </h1>
+            <hr class="main-hr">
+            <h4 class="intro">
+                We are a full service digital agency specialising in E-commerce, digital marketing and web development solutions for brands of all sizes. 
+                Our ultimate goal is to create experiences that your customers will love.
+            </h4>
+        </div>
+        <div class="main-right col">
+            <img src="img/main-anime.gif">
+        </div>
+    </div>
+    <!-- -------------------------------------- Number -------------------------------------- -->
+    <div class="number row align-items-center">
+        <div class="num-col col-md-3 col-sm-6">
+            <h3 class="num-title" id="value-1"> </h3>
+            <p class="num-cont"> followers </p>
+        </div>
+        <div class="num-col num-col-b col-md-3 col-sm-6">
+            <h3 class="num-title" id="value-2"></h3>
+            <p class="num-cont"> organic click</p>
+        </div>
+        <div class="num-col num-col-b col-md-3 col-sm-6">
+            <h3 class="num-title" id="value-3"></h3>
+            <p class="num-cont"> content created </p>
+        </div>
+        <div class="num-col num-col-b col-md-3 col-sm-6">
+            <h3 class="num-title" id="value-4"></h3>
+            <p class="num-cont"> websites built </p>
+        </div>
+    </div>
+    <!-- -------------------------------------- Works -------------------------------------- -->
+    <div class="works">
+        <h2 class="sec-title"> Works. </h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 works-case works-01">
+                <a href="case/the-cafe-brief.html">
+                <img src="case/local-img/the-cafe-brief/the-cafe-brief-cs.png"/>
+                <div class="overlay">
+                    <h5> The Cafe Brief </h5>
+                    <p> Social Media Marketing <br> Website Development </p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 works-case works-02">
+                <a href="case/flipper.html">
+                <img src="case/local-img/flipper-australia/flipper-australia-cs.png"/>
+                <div class="overlay">
+                    <h5> Flipper </h5>
+                    <p> Social Media Marketing <br> Website Development <br> E-commerce </p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 works-case works-03">
+                <a href="case/phonatic.html">
+                <img src="case/local-img/phonatic/phonatic-cs.png"/>
+                <div class="overlay">
+                    <h5> Phonatic </h5>
+                    <p> Social Media Marketing <br> Photography </p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 works-case works-04">
+                <a href="case/viet-menu.html">
+                <img src="case/local-img/viet-menu/viet-menu-cs.png"/>
+                <div class="overlay">
+                    <h5> Viet Menu </h5>
+                    <p> Social Media Marketing <br> Photography </p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 works-case works-05">
+                <a href="case/researchsat.html">
+                <img src="case/local-img/research-sat/research-sat-cs.png"/>
+                <div class="overlay">
+                    <h5> Research-Sat </h5>
+                    <p> Website Development </p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 works-case works-06">
+                <a href="case/sarztix.html">
+                <img src="case/local-img/starztix/starztix-cs.png"/>
+                <div class="overlay">
+                    <h5> Starztix </h5>
+                    <p> Website Development </p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 works-case works-07">
+                <a href="case/house-of-polish.html">
+                <img src="case/local-img/house-of-polish/house-of-polish-cs.png"/>
+                <div class="overlay">
+                    <h5> House of Polish </h5>
+                    <p> Social Media Marketing <br> Website Development </p>
+                </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 works-case works-08">
+                <a href="case/rog.html">
+                <img src="case/local-img/republic-of-games/republic-of-games-cs.png"/>
+                <div class="overlay">
+                    <h5> ROG </h5>
+                    <p> Social Media Marketing </p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------- Services -------------------------------------- -->
+    <div class="services">
+        <h2 class="sec-title"> Services. </h2>
+        <div class="row services-row">
+            <div class="col service-dm">
+                <div class="service-content">
+                    <h6 class="dm"> Digital Marketing </h6>
+                    <p> Reach New Height in the Digital Space. Connect directly with customers, 
+                        create powerful storytelling, deliver sales and achieve strategic goals. 
+                        Our digital marketers lead with strategy, setting a clear path and create marketing campaigns 
+                        to deliver results.</p>
+                    <h7> Social Media Marketing </h7>
+                    <h7> Email Marketing </h7>
+                    <h7> Search Engine Optimisation (SEO) </h7>
+                </div>
+                <img src="img/service-circle.png">
+            </div>
+            <div class="col service-wa">
+                <div class="service-content">
+                    <h6 class="wa"> Websites and Apps </h6>
+                    <p> Need a new digital storefront? A platform to generate leads? The right website will convert 
+                        clicks into customers, get new clients and boost sales for your business. Our team of developers 
+                        and digital designers will create just that. </p>
+                    <h7> Web Design & Services </h7>
+                    <h7> Website App Development </h7>
+                </div>
+                <img src="img/service-wave.png">
+            </div>
+            <div class="col service-cc">
+                <div class="service-content">
+                    <h6 class="cc"> Content Creation </h6>
+                    <p> Quality photos and attractive graphic design grabs the customer’s attention and makes a 
+                        statement about your brand, elevate your digital presence now with us. </p>
+                    <h7> Photography </h7>
+                    <h7> Videography </h7>
+                </div>
+                <img src="img/service-square.png">
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------- Clients -------------------------------------- -->
+    <div class="clients">
+        <div class="clients_slideshow">
+            <div class="clients_logos"> </div>
+        </div>
+    </div>
+    <!-- -------------------------------------- Consulation -------------------------------------- -->
+    <div class="consulation">
+        <h2 class="sec-title consult-title"> Book A Consulation. </h2>
+        <form id="my-form" class="consult-form" action="https://formspree.io/f/xvovdobe" method="POST">
+            <div class="row form-row">
+                <div class="col">
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="col">
+                    <label for="phone">  Phone </label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="col">
+                    <label for="email">  Email </label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="message">  Message </label>
+                <textarea id="message" name="message" cols="20" rows="1"></textarea>
+            </div>
+
+            <div class="form-row"> 
+                <button id="my-form-button" type="submit" class="btn pull-right"> Submit </button>
+            </div>
+            
+        </form>
+    </div>
+    <!-- -------------------------------------- footer -------------------------------------- -->
+    <div class="footer">
+
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>

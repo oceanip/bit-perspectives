@@ -1,0 +1,187 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+/* **************************************** Default **************************************** */
+* {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+title { display: none; }
+
+h1, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+h6 { font-size: 1.5em; }
+
+.sec-title {
+    line-height: 287px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 46px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1260px) {
+    .sec-title {
+        font-size: 2.3em;
+        line-height: 130px;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+/* **************************************** Coming Soon **************************************** */
+.coming-soon{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.coming-soon > img{
+    width: 20%;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    opacity: 0.8;
+}
+
+
+.mm-left {
+    width: 60%;
+    height: 100vh;
+    float:left;
+    background-color: black;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mm-left img{
+    width: 100%;
+    /* margin: 10vh auto; */
+}
+
+.mm-right {
+    width: 40%;
+    height: 100vh;
+    display: inline-block;
+    background-color: black;
+}
+
+.mm-right h3 {
+    font-size: 3em;
+    margin: 40vh auto 3vh auto;
+}
+
+.mm-right p {
+    display: inline-block;
+    line-height: 25px;
+    margin-right: 10px;
+}
+
+.fa{
+    padding: 22px;
+    font-size: 25px !important;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa:hover { background-color: cornflowerblue; }
+
+.fa-facebook:hover{ background: #3B5998; }
+
+.fa-instagram:hover { 
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); 
+}
+
+.fa-window-maximize:hover{
+    background-color: darkseagreen;
+}
+
+button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    padding: 15px 25px;
+    margin: 20px auto;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    background-color: white;
+}
+
+button:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white
+}
+
+
+
+@media only screen and (max-width: 830px){
+    .coming-soon{
+        display: flex;
+        flex-direction: column;
+    }
+    .mm-left{
+        width: 100%;
+        height: 65vh;
+    }
+    .mm-left img{
+        margin: 0;
+    }
+    .mm-right {
+        width: 100%;
+        max-height: 35vh;
+        margin: 0; 
+    }
+    .mm-right h3{
+        margin: 30px auto;
+        font-size: 2em;
+    }
+    .mm-right button{
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .mm-left{
+        height: 50vh;
+    }
+    .mm-right {
+        max-height: 50vh;
+    }
+}
